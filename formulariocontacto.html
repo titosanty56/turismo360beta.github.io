@@ -20,12 +20,19 @@
         <p>Mensaje:</p>
             <textarea class="box" name="mensaje" rows="8" cols="40" required></textarea>
         </div>
+        <div class="captcha">
+                <p id="numero-random">Numero Random</p>
+            <button id="generar-numero" class="btn-generar">generar numero random</button>
+        </div>
+            <input class="box" id="input-numero" type="number">
+            <button class="btn" id="btn-verificar">verificar</button>
+                <p>escribe el mismo numero que ves en pantalla para verificar si sos o no un robot</p>
+                <p id="correcto"></p>
         <div class="contenedor-enviar-gracias">
-            <button type="submit" id="btn-enviar">Enviar</button>
-            <p id="agradecimiento"> Gracias por contactarnos!</p>
+            <button type="submit" id="enviar" class="btn">Enviar</button>
+            <p id="agradecimiento"></p>
         </div>
     </form>
-    <div id="mensaje" class="hidden">Enviado correctamente!</div>
     <div id="ingreso"></div>
     
     <script src="form.js"></script>
